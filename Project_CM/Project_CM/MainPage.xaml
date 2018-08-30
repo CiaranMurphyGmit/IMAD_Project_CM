@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="Project_CM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project_CM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Border Background="DarkCyan"/>
+        <Border Grid.Column ="3" Background="DarkCyan"/>
+        <Border Grid.Column ="1" Background="DarkCyan"/>
+        <Border Grid.Row="1" Background="DarkCyan"/>
+        <Border Grid.Row="1" Grid.Column="1" Background="DarkOliveGreen"/>
+        <Border Grid.Row="1" Grid.Column="3" Background="DarkCyan"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="40,0,0,0" VerticalAlignment="Top">
+            <Button x:Name="Aries" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Aries" Click="Button_Click_Aries"/>
+            <Button x:Name="Taurus" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Taurus" Click="Button_Click_Taurus"/>
+            <Button x:Name="Gemini" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Gemini" Click="Button_Click_Gemini"/>
+            <Button x:Name="Cancer" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Cancer" Click="Button_Click_Cancer"/>
+            <Button x:Name="Leo" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Leo" Click="Button_Click_Leo"/>
+            <Button x:Name="Virgo" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Virgo" Click="Button_Click_Virgo"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="40,0,0,0" VerticalAlignment="Top">
+            <Button x:Name="Libra" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Libra" Click="Button_Click_Libra"/>
+            <Button x:Name="Scorpio" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Scorpio" Click="Button_Click_Scorpio"/>
+            <Button x:Name="Sagittarius" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Sagittarius" Click="Button_Click_Sagittarius"/>
+            <Button x:Name="Capricorn" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Capricorn" Click="Button_Click_Capricorn"/>
+            <Button x:Name="Aquarius" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Aquarius" Click="Button_Click_Aquarius"/>
+            <Button x:Name="Pisces" Margin="243,0,0.2,0" Height="70" Width="70" CanDrag="False" Background="White" Content="Pisces" Click="Button_Click_Pisces"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="40,0,0,0" VerticalAlignment="Top">
+            <Button x:Name="CLongitudeInfo" Margin="299,110,-28.6,0" Height="24" Width="24" CanDrag="False" Background="White" Content="?" FontSize="10"  Click="Button_Click_CLongitudeInfo"/>
+            <Button x:Name="ZElementInfo" Margin="299,59,0.2,0" Height="24" Width="24" CanDrag="False" Background="White" Content="?" FontSize="10" Click="Button_Click_ZElementInfo"/>
+            <Button x:Name="SRulerInfo" Margin="299,0,0.2,0" Height="24" Width="24" CanDrag="False" Background="White" Content="?" FontSize="10" Click="Button_Click_SRulerInfo"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Margin="40,0,0,0" VerticalAlignment="Top">
+            <TextBlock x:Name="Info" Foreground="White" FontSize="15" Text=""/>
+        </StackPanel>
+
+        <TextBlock Foreground="White" Grid.Column="1" FontSize="25" Text="Click on an icon on the right to display information"/>
+        <Image x:Name="DisplaySign" Grid.Column="1" Margin="20" Source="Assets/Aries.png" Height="300" />
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Top">
+            <TextBlock x:Name="PName" Foreground="White" FontSize="40" Text="Aries"/>
+            <TextBlock x:Name="PMeaning" Foreground="White" FontSize="20" Text="The Ram"/>
+            <TextBlock x:Name="PPosition" Foreground="White" FontSize="20" Text="1st Astrological Sign in the Zodiac"/>
+            <TextBlock x:Name="PCLongitude" Foreground="White" FontSize="20" Text="Celestial longitude: 0° to 30°"/>
+            <TextBlock x:Name="PDuration" Foreground="White" FontSize="20" Text="Duration: March 20th - April 20th"/>
+            <TextBlock x:Name="PZElement" Foreground="White" FontSize="20" Text="Zodiac Element: Fire"/>
+            <TextBlock x:Name="PZQuality" Foreground="White" FontSize="20" Text="Zodiac Quality: Cardinal"/>
+            <TextBlock x:Name="PSRuler" Foreground="White" FontSize="20" Text="Sign Ruler: Mars"/>
+        </StackPanel>
+    </Grid>
+</Page>
