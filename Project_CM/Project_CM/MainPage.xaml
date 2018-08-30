@@ -49,7 +49,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Margin="40,0,0,0" VerticalAlignment="Top">
-            <TextBlock x:Name="Info" Foreground="White" FontSize="15" Text=""/>
+            <TextBlock x:Name="Info" Foreground="White" FontSize="15" Text="Info"/>
         </StackPanel>
 
         <TextBlock Foreground="White" Grid.Column="1" FontSize="25" Text="Click on an icon on the right to display information"/>
